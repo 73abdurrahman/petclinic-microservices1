@@ -87,6 +87,7 @@
   </snapshotRepository>
 </distributionManagement>
 
+
     <profiles>
         <profile>
             <id>springboot</id>
