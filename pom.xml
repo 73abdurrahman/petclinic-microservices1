@@ -72,21 +72,20 @@
             </dependency>
 
         </dependencies>
-    </dependencyManagement> 
+    </dependencyManagement>
 
     <distributionManagement>
   <repository>
     <id>nexus</id>
     <name>maven-releases</name>
-    <url>http://172.31.9.32:8081/repository/maven-releases/</url>
+    <url>http://172.31.3.66:8081/repository/maven-releases/</url>
   </repository>
   <snapshotRepository>
     <id>nexus</id>
     <name>maven-snapshots</name>
-    <url>http://172.31.9.32:8081/repository/maven-snapshots/</url>
+    <url>http://172.31.3.66:8081/repository/maven-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>
-
 
     <profiles>
         <profile>
@@ -99,8 +98,7 @@
             </activation>
             <build>
                 <plugins>
-
-                    <plugin>
+                <plugin>
                         <groupId>org.jacoco</groupId>
                         <artifactId>jacoco-maven-plugin</artifactId>
                         <version>0.8.2</version>
@@ -119,9 +117,7 @@
                                 </goals>
                             </execution>
                         </executions>
-                    </plugin>
-
-
+                    </plugin>           
                     <plugin>
                         <groupId>org.springframework.boot</groupId>
                         <artifactId>spring-boot-maven-plugin</artifactId>
